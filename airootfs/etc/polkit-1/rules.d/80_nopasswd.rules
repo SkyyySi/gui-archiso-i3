@@ -1,0 +1,6 @@
+/* Allow members of the wheel group to execute any actions without password authentication. */
+polkit.addRule(function(action, subject) {
+    if (subject.isInGroup("wheel")) {
+        return polkit.Result.YES;
+    }
+});
