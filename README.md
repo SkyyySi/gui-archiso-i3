@@ -18,4 +18,4 @@ To test the ISO imediatly, you can use `run_archiso`, which will run the ISO ins
 # Other information
 
 In case you get logged out or your screen locks:
-The login is `iso-user` and the password is `iso` (I had to define a password, as not doing so may case issues).
+The login is `iso-user` and the password is `iso` (I had to define a password, as not doing so may cause issues).
