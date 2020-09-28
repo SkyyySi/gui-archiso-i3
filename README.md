@@ -14,3 +14,8 @@ Login as root (via ´sudo -i´, ´doas -s´ or ´su´) and clone the files to it
 4. Cd into the directory, then type `mkarchiso -v -w /tmp/gui-archiso-kde-work -o ${PWD}/out ${PWD}`
 
 To test the ISO imediatly, you can use `run_archiso`, which will run the ISO inside QEmu (which you need to have installed).
+
+# Other information
+
+In case you get logged out or your screen locks:
+The login is `iso-user` and the password is `iso` (I had to define a password, as not doing so may cause issues).
