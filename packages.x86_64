@@ -1,3 +1,4 @@
+### Base system ###
 amd-ucode
 arch-install-scripts
 b43-fwcutter
@@ -6,6 +7,7 @@ base-devel
 bind-tools
 broadcom-wl
 btrfs-progs
+busybox
 clonezilla
 crda
 curl
@@ -20,6 +22,7 @@ dosfstools
 edk2-shell
 efibootmgr
 ethtool
+exa
 exfatprogs
 f2fs-tools
 fsarchiver
@@ -27,7 +30,6 @@ git
 gnu-netcat
 gpm
 gptfdisk
-grml-zsh-config
 haveged
 hdparm
 intel-ucode
@@ -54,6 +56,7 @@ mkinitcpio-archiso
 mkinitcpio-nfs-utils
 mtools
 nano
+nano-syntax-highlighting
 nbd
 ndisc6
 nfs-utils
@@ -84,6 +87,7 @@ tcpdump
 terminus-font
 termite-terminfo
 testdisk
+tree
 usb_modeswitch
 usbutils
 vim
@@ -93,11 +97,26 @@ wireless-regdb
 wireless_tools
 wpa_supplicant
 wvdial
+xclip
 xfsprogs
 xl2tpd
+xsel
 yay
-zsh
 
+### Shell ###
+awesome-terminal-fonts
+grml-zsh-config
+powerline-fonts-git
+ttf-meslo-nerd-font-powerlevel10k
+zsh
+zsh-autosuggestions
+zsh-completions
+zshdb
+zsh-history-substring-search
+zsh-syntax-highlighting
+zsh-theme-powerlevel10k
+
+### Drivers ###
 gtk2
 gtkmm3
 open-vm-tools
@@ -117,6 +136,7 @@ xf86-video-vmware
 xf86-video-voodoo
 xf86-video-qxl
 
+### Desktop ###
 calamares-skyyysi-git
 discover
 dolphin
@@ -127,3 +147,5 @@ konsole
 packagekit-qt5
 plasma-meta
 vlc
+xdg-user-dirs-gtk-update
+xdg-user-dirs-update

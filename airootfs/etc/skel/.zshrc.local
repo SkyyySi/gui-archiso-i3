@@ -1,0 +1,31 @@
+#!/usr/bin/env zsh
+
+### USER CONFIG ###
+
+prompt off
+autoload -Uz colors && colors
+PROMPT="%("'!'".%(?.%{$bg[black]%}.%{$bg[red]%})%{$fg_bold[yellow]%} "'!'".)%(?.%{$bg[black]%}%{$fg_bold[green]%} "$'\u2714'" %{$reset_color%}%{$bg[blue]%}%{$fg[black]%}.%{$bg[red]%}%{$fg_bold[yellow]%} "$'\u2718'" %? %{$reset_color%}%{$bg[blue]%}%{$fg[red]%})"$'\ue0b0'"%{$bg[blue]%}%{$fg_bold[white]%} %~ %{$reset_color%}%{$fg[blue]%}"$'\ue0b0'"%{$reset_color%} "
+RPROMPT="%{$reset_color%}%{$fg[black]%}"$'\ue0b2'"%{$reset_color%}%{$bg[black]%}%{$fg[white]%} %m:%n %{$fg[white]%}"$'\ue0b2'"%{$reset_color%}%{$bg[white]%}%{$fg[black]%} %* %{$reset_color%}"
+
+ZSH="$HOME/.zsh"
+ZSH_THEME=""
+plugins=(
+	'git'
+#	'zsh-autocomplete'
+	'zsh-autosuggestions'
+	'zsh-syntax-highlighting'
+	'zsh-history-substring-search'
+)
+
+source "$HOME/.zsh_loader.zsh"
+
+function noout() {
+	nohup "$@"&>/dev/null&
+}
+
+alias ls='exa'
+alias la='exa -a'
+alias l='exa  -al --group-directories-first'
+alias ll='exa -al --group-directories-first'
+
+test -r "~/.config/dir_colors" && eval $(dircolors ~/.config/.dir_colors)
