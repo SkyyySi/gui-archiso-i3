@@ -147,5 +147,5 @@ konsole
 packagekit-qt5
 plasma-meta
 vlc
-xdg-user-dirs-gtk-update
-xdg-user-dirs-update
+xdg-user-dirs
+xdg-user-dirs-gtk
