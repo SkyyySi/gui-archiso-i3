@@ -1,0 +1,24 @@
+# Show the currently playing media
+[mediaplayer]
+command=/usr/lib/i3blocks/mediaplayer/mediaplayer
+interval=1
+color=#8fbcbb
+
+# Guess the weather hourly
+[weather]
+command=curl -Ss 'https://wttr.in?0&T&Q' | cut -c 16- | head -2 | xargs echo
+interval=3600
+color=#88c0d0
+
+# Query my default IP address only on startup
+[ip]
+#command=hostname -i | awk '{ print "IP:" $1 }'
+command=echo "IP: $(ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1' | grep 192.168.1)"
+interval=once
+color=#81a1c1
+
+# Update time every 5 seconds
+[time]
+command=echo "$(date +%A), der $(date +%d). $(date +%B) $(date +%Y) - $(date +%T) "
+interval=1
+color=#d8dee9
